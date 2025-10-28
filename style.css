@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.7;
+    background: #c3c7c9;
+    color: #333;
+    flex-direction: column;
+    display: flex;
+}
+
+header{
+    background: rgb(151, 50, 75);
+    color: black;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+/*.profileheader{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    display: flex;
+}*/
+
+header nav a{
+    color: darkgoldenrod;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color:darkblue;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+#about{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+}
+
+.skills{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-grid{
+    display: grid;
+    
+}
+
+footer{
+    background-color: darkgoldenrod;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer a{
+    color: #0e0eb0;
+  text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 600px){
+    #about {
+        text-align: center;
+    }
+    .profile{
+        margin: 0 auto;
+    }
+    .video{
+        margin: 0 auto;
+    }
+}
+
+.video-container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.video{
+    width: 30%;
+    margin-top: 150px;
+}
+
+.text{
+    text-align: center;
+}
